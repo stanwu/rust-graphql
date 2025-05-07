@@ -44,7 +44,7 @@ async fn main() -> std::io::Result<()> {
             .app_data(Data::new(schema.clone())) // 與所有處理器共享架構
             .route("/graphql", web::post().to(graphql)) // GraphQL 請求的路由
     })
-    .bind("127.0.0.1:8080")? // 將伺服器綁定到本地端口 8080
+    .bind("0.0.0.0:8080")? // 將伺服器綁定到本地端口 8080
     .run() // 運行伺服器
     .await // 等待伺服器完成
 }
