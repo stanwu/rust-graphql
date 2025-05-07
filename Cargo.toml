@@ -1,0 +1,9 @@
+[package]
+name = "rust-graphql"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+juniper = "0.16.1"
+juniper_actix = "0.6.0"
+actix-web = "4.0"
